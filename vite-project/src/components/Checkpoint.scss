@@ -1,0 +1,66 @@
+.checkpoint-title {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  color: #30c254;
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: 3.2em;
+
+  &:hover {
+    filter: drop-shadow(0 0 1.5rem #30c254);
+    -webkit-filter: drop-shadow(0 0 1.5rem #30c254);
+    color: #ffffffde;
+    cursor: pointer;
+  }
+}
+
+@keyframes approved {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .approved {
+    animation: approved infinite 0.9s linear;
+    -webkit-animation: approved infinite 0.9s linear;
+  }
+}
