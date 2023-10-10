@@ -1,6 +1,7 @@
 import "./Checkpoint.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
 import React, { useState, useEffect, useRef } from "react";
+import axios from "axios";
 
 export const Checkpoint = () => {
   return (
