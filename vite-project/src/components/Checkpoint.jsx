@@ -1,7 +1,5 @@
 import "./Checkpoint.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
 
 export const Checkpoint = () => {
   return (
@@ -14,6 +12,8 @@ export const Checkpoint = () => {
         <FaRegCheckCircle className="approved" />
         <span>Checkpoint</span>
       </a>
+      <hr />
+      <div></div>
     </>
   );
 };
